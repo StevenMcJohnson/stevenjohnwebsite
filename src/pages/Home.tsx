@@ -58,26 +58,26 @@ const Home = () => {
             <motion.img 
               src="/profile.jpg" 
               alt="Steven John" 
-              className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-blue-400 object-cover shadow-lg"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-6 border-4 border-blue-400 object-cover shadow-lg"
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             />
-            <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4">Steven John</h1>
-            <p className="text-xl text-gray-400 mb-8">Aspiring Software Developer</p>
-            <div className="flex justify-center items-center flex-wrap gap-x-6 gap-y-4 text-gray-400">
-              <a href="mailto:Steven.John06@icloud.com" className="flex items-center space-x-2 hover:text-blue-400 transition-colors">
+            <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">Steven John</h1>
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">Aspiring Software Developer</p>
+            <div className="flex flex-col items-center justify-center gap-y-2 text-sm text-gray-500 dark:text-gray-400 sm:flex-row sm:gap-x-6 sm:text-base">
+              <a href="mailto:Steven.John06@icloud.com" className="flex items-center space-x-2 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
                 <Mail size={20} />
-                <span>Steven.John06@icloud.com</span>
+                <span className="break-all">Steven.John06@icloud.com</span>
               </a>
-              <a href="tel:9086361176" className="flex items-center space-x-2 hover:text-blue-400 transition-colors">
+              <a href="tel:9086361176" className="flex items-center space-x-2 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
                 <Phone size={20} />
                 <span>908-636-1176</span>
               </a>
             </div>
              <div className="flex justify-center items-center space-x-4 mt-6">
-                <a href="https://github.com/StevenMcJohnson" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors"><Github size={24}/></a>
-                <a href="https://www.linkedin.com/in/steven-john-465687350/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors"><Linkedin size={24}/></a>
+                <a href="https://github.com/StevenMcJohnson" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"><Github size={24}/></a>
+                <a href="https://www.linkedin.com/in/steven-john-465687350/" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"><Linkedin size={24}/></a>
             </div>
           </header>
            <button onClick={() => scrollToSection('about')} className="absolute bottom-16 animate-bounce">
@@ -87,37 +87,37 @@ const Home = () => {
 
         <main>
           <motion.section id="about" className="mb-16 py-8" {...sectionAnimation}>
-            <h2 className="text-3xl font-bold text-white border-b-2 border-blue-400 pb-2 mb-6 inline-block">About Me</h2>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-blue-500 dark:border-blue-400 pb-2 mb-6 inline-block">About Me</h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               I possess strong math, analytical, and communication skills. I am passionate about coding and enjoy volunteering and giving back to the community.
             </p>
           </motion.section>
 
           <motion.section id="experience" className="mb-16 py-8" {...sectionAnimation}>
-            <h2 className="text-3xl font-bold text-white border-b-2 border-blue-400 pb-2 mb-6 inline-block">Experience</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-blue-500 dark:border-blue-400 pb-2 mb-6 inline-block">Experience</h2>
             <div className="space-y-8">
               <div className="group">
-                <h3 className="text-xl font-semibold flex items-center gap-2">Coding with a Purpose <span className="text-sm text-gray-500">- July 2022</span></h3>
-                <p className="text-gray-400 ml-2">Built a weather app with a team of classmates using Java & Python. <a href="#" className="inline-flex items-center text-blue-400 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"><ExternalLink size={16} className="ml-1"/></a></p>
+                <h3 className="text-xl font-semibold flex items-center gap-2 text-gray-800 dark:text-white">Coding with a Purpose <span className="text-sm text-gray-500">- July 2022</span></h3>
+                <p className="text-gray-600 dark:text-gray-400 ml-2">Built a weather app with a team of classmates using Java & Python. <a href="#" className="inline-flex items-center text-blue-500 dark:text-blue-400 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"><ExternalLink size={16} className="ml-1"/></a></p>
               </div>
               <div className="group">
-                <h3 className="text-xl font-semibold flex items-center gap-2">Front Office Assistant, Chozhas <span className="text-sm text-gray-500">- Dec 2022 - present</span></h3>
-                <p className="text-gray-400 ml-2">Assisted and greeted customers to ensure an excellent customer experience.</p>
+                <h3 className="text-xl font-semibold flex items-center gap-2 text-gray-800 dark:text-white">Front Office Assistant, Chozhas <span className="text-sm text-gray-500">- Dec 2022 - present</span></h3>
+                <p className="text-gray-600 dark:text-gray-400 ml-2">Assisted and greeted customers to ensure an excellent customer experience.</p>
               </div>
               <div className="group">
-                <h3 className="text-xl font-semibold flex items-center gap-2">Hack Swift Hackathon</h3>
-                <p className="text-gray-400 ml-2">Created a hackathon team and led the development of a chess game in Java. <a href="#" className="inline-flex items-center text-blue-400 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"><ExternalLink size={16} className="ml-1"/></a></p>
+                <h3 className="text-xl font-semibold flex items-center gap-2 text-gray-800 dark:text-white">Hack Swift Hackathon</h3>
+                <p className="text-gray-600 dark:text-gray-400 ml-2">Created a hackathon team and led the development of a chess game in Java. <a href="#" className="inline-flex items-center text-blue-500 dark:text-blue-400 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"><ExternalLink size={16} className="ml-1"/></a></p>
               </div>
             </div>
           </motion.section>
 
           <motion.section id="skills" className="mb-16 py-8" {...sectionAnimation}>
-            <h2 className="text-3xl font-bold text-white border-b-2 border-blue-400 pb-2 mb-6 inline-block">Skills</h2>
-            <div className="flex flex-wrap gap-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-blue-500 dark:border-blue-400 pb-2 mb-6 inline-block">Skills</h2>
+            <div className="flex flex-wrap justify-center gap-3">
               {['Python (Intermediate)', 'Java (Intermediate)', 'TypeScript', 'HTML', 'CSS', 'Microsoft Office', 'Conversational Spanish', 'Swimming', 'Cooking', 'Cursor', 'Gemini'].map((skill, i) => (
                 <motion.span 
                   key={skill}
-                  className="bg-gray-800 text-blue-300 px-4 py-2 rounded-full shadow-md"
+                  className="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-blue-300 px-3 py-1.5 rounded-full shadow-md text-sm sm:px-4 sm:py-2 sm:text-base"
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -130,28 +130,28 @@ const Home = () => {
           </motion.section>
           
           <motion.section id="education" className="mb-16 py-8" {...sectionAnimation}>
-            <h2 className="text-3xl font-bold text-white border-b-2 border-blue-400 pb-2 mb-6 inline-block">Education</h2>
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold">High School</h3>
-              <p className="text-md text-gray-400">Sept 2020 – Present (Anticipated graduation June 2025)</p>
-              <p className="text-md text-gray-400">GPA: 3.7 (weighted)</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-blue-500 dark:border-blue-400 pb-2 mb-6 inline-block">Education</h2>
+            <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white">High School</h3>
+              <p className="text-md text-gray-600 dark:text-gray-400">Sept 2020 – Present (Anticipated graduation June 2025)</p>
+              <p className="text-md text-gray-600 dark:text-gray-400">GPA: 3.7 (weighted)</p>
               <div className="mt-4">
-                <h4 className="font-semibold text-blue-300">AP Classes & Scores:</h4>
-                <ul className="list-disc list-inside ml-4 text-gray-400">
+                <h4 className="font-semibold text-blue-600 dark:text-blue-300">AP Classes & Scores:</h4>
+                <ul className="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400">
                   <li>AP Computer Science Principles: 4</li>
                   <li>AP CSA: 5</li>
                 </ul>
               </div>
               <div className="mt-4">
-                <h4 className="font-semibold text-blue-300">Rutgers Pre-College Course:</h4>
-                <ul className="list-disc list-inside ml-4 text-gray-400">
+                <h4 className="font-semibold text-blue-600 dark:text-blue-300">Rutgers Pre-College Course:</h4>
+                <ul className="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400">
                   <li>Data Structures (01:198:112)</li>
                 </ul>
               </div>
             </div>
-             <div className="bg-gray-800 p-6 rounded-lg shadow-lg mt-6">
-                <h3 className="text-xl font-semibold">Awards & Certificates</h3>
-                 <ul className="list-disc list-inside text-gray-400">
+             <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg mt-6">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Awards & Certificates</h3>
+                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-400">
                   <li>National Honor Society (November 2021)</li>
                   <li>AP Scholar Award (June 2022)</li>
                 </ul>
@@ -159,8 +159,8 @@ const Home = () => {
           </motion.section>
 
           <motion.section id="volunteer" className="mb-16 py-8" {...sectionAnimation}>
-            <h2 className="text-3xl font-bold text-white border-b-2 border-blue-400 pb-2 mb-6 inline-block">Volunteer Experience</h2>
-            <ul className="list-disc list-inside space-y-3 text-gray-300">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white border-b-2 border-blue-500 dark:border-blue-400 pb-2 mb-6 inline-block">Volunteer Experience</h2>
+            <ul className="list-disc list-inside space-y-3 text-gray-700 dark:text-gray-300">
               <li>
                 <strong>Operation Christmas Child Shoebox Project</strong> (Oct 2020 - present): Packaged gifts for children in need and assisted with fundraising.
               </li>
