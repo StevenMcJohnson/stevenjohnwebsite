@@ -259,14 +259,14 @@ const Home = () => {
             <div className="space-y-6">
               <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Bridgewater Raritan High School</h3>
-                <p className="text-md text-gray-600 dark:text-gray-400 mb-2">Anticipated Graduation: June 2025 | GPA: 3.7</p>
+                <p className="text-md text-gray-600 dark:text-gray-400 mb-2">Anticipated Graduation: June 2025 | GPA: 3.9</p>
                 <div className="mt-3">
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">AP Computer Science Principles (4), AP Computer Science A (5)</p>
                 </div>
               </div>
               <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Rutgers University – New Brunswick</h3>
-                <p className="text-md text-gray-600 dark:text-gray-400 mb-2">Anticipated Graduation: May 2029 | GPA: 3.3</p>
+                <p className="text-md text-gray-600 dark:text-gray-400 mb-2">Anticipated Graduation: May 2029 | GPA: 3.5</p>
                 <div className="mt-3">
                   <h4 className="font-semibold text-blue-600 dark:text-blue-300 mb-2">Relevant Courses:</h4>
                   <ul className="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400 space-y-1">
