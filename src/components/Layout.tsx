@@ -15,11 +15,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const navLinks = [
     { name: 'Home', path: '/', type: 'page' },
     { name: 'About', path: '/#about', type: 'section' },
-    { name: 'Experience', path: '/#experience', type: 'section' },
     { name: 'Skills', path: '/#skills', type: 'section' },
+    { name: 'Experience', path: '/#experience', type: 'section' },
     { name: 'Education', path: '/#education', type: 'section' },
+    { name: 'Projects', path: '/#projects', type: 'section' },
+    { name: 'Organizations', path: '/#organizations', type: 'section' },
     { name: 'Volunteer', path: '/#volunteer', type: 'section' },
-    { name: 'Rutgers', path: '/rutgers', type: 'page' },
   ];
 
   useEffect(() => {
